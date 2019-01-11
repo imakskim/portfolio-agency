@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  height: 135px;
+  position: absolute;
+  z-index: 1;
+}
+
+.container_header {
+  height: 100%;
+  display: flex;
+}
+
+.logo-rectangle {
+  width: 149px;
+  height: 55px;
+  opacity: 0.6;
+  border: 3px solid #170f1c;
+  border-radius: 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.38rem;
+  font-weight: 600;
+  color: $color-logo;
+}
+
+.logo-title_highlight {
+  color: $color-logo-highlight;
+  opacity: .7;
+}
+
+.logo-title {
+  margin-top: -4px;
+}
+
+.header__logo {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header__menu-btn {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+
+.menu-btn {
+  display: block;
+  height: 22px;
+  width: 34px;
+  background-color: #170f1c;
+}

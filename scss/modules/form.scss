@@ -1,0 +1,87 @@
+.form {
+  width: 372px;
+  height: 388px;
+  border-radius: 2px;
+  box-shadow: 0 0 57px 0 rgba(20, 20, 21, 0.2);
+
+  // positioning of child elements
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  // absolute positioning in hero section
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.form__title {
+  margin-top: 24px;
+  font-family: 'OpenSans';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: $form-title;
+
+  &_highlight {
+    color: rgba(255, 92, 54, 0.9);
+  }
+}
+
+.form__input {
+  background-color: #f5f5f5;
+  outline: none;
+  width: 294px;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.22);
+
+  &_message {
+    height: 85px;
+    resize: none;
+  }
+}
+
+.form__btn {
+  margin-bottom: 20px;
+  border: none;
+  width: 238px;
+  height: 55px;
+  border-radius: 27px;
+  box-shadow: 1.9px 10.8px 20px 0 rgba(20, 20, 21, 0.08);
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: $main-interface;
+  position: relative;
+}
+
+
+.form__btn-title {
+  color: #ffffff;
+}
+
+.form__btn-title:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 10px;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-49%)
+}
+
+.form__row {
+  margin-bottom: 34px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__content
+ {
+  margin-top: 15px;
+ }
+

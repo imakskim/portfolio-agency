@@ -1,0 +1,37 @@
+.hero {
+  background-color: #f5f5f5;
+}
+
+// modify container of hero section 
+.container_hero {
+  min-height: 930px;
+  position: relative;
+}
+
+.hero__caption {
+  font-family: OpenSans;
+  font-size: 50px;
+  font-weight: 600;
+  color: $hero-caption;
+  text-align: center;
+  opacity: .94;
+}
+
+.hero__caption-highlight {
+  color: $hero-caption-highlight;
+}
+
+.hero__text {
+  color: $main-text;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.hero__content {
+  width: 61%;
+  position: absolute;
+  top: 28.5%;
+  left: 50%;
+  transform: translate(-50%, 0)
+}
