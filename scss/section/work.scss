@@ -1,11 +1,34 @@
 // modify container of 'work' section
 .container__work {
   min-height: 775px;
+  padding-top: 135px;
 }
 
+.work__text {
+  text-align: center;
+}
+
+
+////positioning tiles//// 
+.work__tile-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 105px;
+}
+
+////styling tiles////
 .work__tile-item {
+  margin-bottom: 30px;
+  
   width: 262px;
   height: 263px;
+  position: relative;
+  //flex positioning child elements
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   //modify tile colors
   &_color-blue {
@@ -20,16 +43,6 @@
   &_color-watermelon {
     background-color: #f74770;
   }
-
-  //because absolute positioning button
-  position: relative;
-
-  //flex positioning child elements
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .work__tile-text {
@@ -38,6 +51,7 @@
   color: $tile-text;
   text-align: center;
   width: 80%;
+  margin-top: 10px;
 }
 
 .work__tile-title {
@@ -47,8 +61,52 @@
   text-transform: capitalize;
   text-align: center;
   width: 80%;
+  position: relative;
+
+  //add icons to tiles
+  &_magnet {
+    &:after {
+      background: url(../images/magnet.png) no-repeat;
+      background-size: cover;
+      width: 43px;
+      height: 44px;
+      @extend .tile-icon;
+    }
+  }
+
+  &_bug {
+    &:after {
+      background: url(../images/bug.png) no-repeat;
+      background-size: cover;
+      width: 54px;
+      height: 50px;
+      @extend .tile-icon;
+    }
+  }
+
+  &_cogwheel {
+    &:after {
+      background: url(../images/cogwheel.png) no-repeat;
+      background-size: cover;
+      width: 54px;
+      height: 50px;
+      @extend .tile-icon;
+    }
+  }
+
+  &_photo {
+    &:after {
+      background: url(../images/photo.png) no-repeat;
+      background-size: cover;
+      width: 56px;
+      height: 52px;
+      @extend .tile-icon;
+    }
+  }
 }
 
+
+////styling button/////
 .work-btn {
   background-color: $work-btn;
   width: 228px;
@@ -63,9 +121,16 @@
   &:hover {
     box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);
   }
+
+  //positioning child elements 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .work-btn__title {
+  margin-left: 20px;
   font-family: 'OpenSans';
   font-size: 1rem;
   text-align: center;
@@ -78,10 +143,6 @@
   width: 16px;
   height: 2px;
   background-color: $work-btn-title;
-  position: absolute;
-  top: 50%;
-  left: 17%;
-  transform: translateY(-50%);
   border-radius: 1px;
 
   &:after {
