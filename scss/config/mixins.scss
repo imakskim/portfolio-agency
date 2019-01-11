@@ -1,0 +1,32 @@
+//captions style
+.caption {
+  font-family: 'OpenSans';
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: $caption;
+  text-transform: capitalize;
+
+  &_highlighted {
+    color: $caption-highlight;
+  }
+}
+
+//main-text style
+.main-text {
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  color: $main-text;
+}
+
+// btn text style (section work)
+.work-btn__title {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}

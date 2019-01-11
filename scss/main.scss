@@ -1,8 +1,8 @@
 /* config */
 // variables contains color variables
 // media contains requests to adaptive
-@import "config/mixins.scss";
 @import "config/variables.scss";
+@import "config/mixins.scss";
 @import "config/media.scss";
 
 /* layout */
@@ -12,6 +12,7 @@
 /* sections */
 @import "section/header.scss";
 @import "section/hero.scss";
+@import "section/work.scss";
 
 /* modules */
 @import "modules/form.scss";

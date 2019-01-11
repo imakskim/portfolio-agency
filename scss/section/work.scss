@@ -1,0 +1,97 @@
+// modify container of 'work' section
+.container__work {
+  min-height: 775px;
+}
+
+.work__tile-item {
+  width: 262px;
+  height: 263px;
+
+  //modify tile colors
+  &_color-blue {
+    background-color: #4eb2f7;
+  }
+  &_color-heliotrope {
+    background-color: #c049f8;
+  }
+  &_color-periwinkle {
+    background-color: #817eff;
+  }
+  &_color-watermelon {
+    background-color: #f74770;
+  }
+
+  //because absolute positioning button
+  position: relative;
+
+  //flex positioning child elements
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.work__tile-text {
+  font-family: 'OpenSans';
+  font-size: .938rem;
+  color: $tile-text;
+  text-align: center;
+  width: 80%;
+}
+
+.work__tile-title {
+  font-family: 'OpenSans';
+  font-size: 1.25rem;
+  color: $tile-title;
+  text-transform: capitalize;
+  text-align: center;
+  width: 80%;
+}
+
+.work-btn {
+  background-color: $work-btn;
+  width: 228px;
+  height: 55px;
+  border-radius: 27px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  outline: none;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);
+  }
+}
+
+.work-btn__title {
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  text-align: center;
+  color: $work-btn-title;
+}
+
+.work-btn__shape {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: $work-btn-title;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translateY(-50%);
+  border-radius: 1px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: $work-btn-title;
+    border-radius: 1px;
+    transform: rotate(90deg);
+
+  }
+}
