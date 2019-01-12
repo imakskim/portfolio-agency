@@ -8,7 +8,6 @@
   text-align: center;
 }
 
-
 ////positioning tiles//// 
 .work__tile-list {
   display: flex;
@@ -24,7 +23,7 @@
   width: 262px;
   height: 263px;
   position: relative;
-  //flex positioning child elements
+  //flex child elements
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +121,7 @@
     box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);
   }
 
-  //positioning child elements 
+  //position of button text and shape 
   display: flex;
   justify-content: center;
   align-items: center;

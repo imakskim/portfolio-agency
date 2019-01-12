@@ -29,3 +29,16 @@
   transform: translateX(-50%);
 }
 
+//service article icon mixin
+@mixin service-icon($width, $height, $pic-name) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+background: url(images/service/$pic-name +'.png');
+background-repeat: no-repeat;
+}

@@ -1,0 +1,51 @@
+.container_service {
+  min-height: 927px;
+}
+////positioning grid template////
+.service__grid-container {
+  display: grid;
+  grid-template: 
+    "caption caption" 330px
+    "article image"
+    /35% 65%;
+}
+
+.service__text {
+  grid-area: caption;
+}
+
+.service__article {
+  grid-area: article;
+  display: flex;
+}
+
+.service__img {
+  grid-area: image;
+}
+
+//styling icons
+.service__icon-item {
+  width: 104px;
+  height: 92px;border-radius: 2px;
+  box-shadow: 0 0 1px 0 rgba(20, 20, 21, 0.14);
+  background-color: #fbfbfb;
+  position: relative;
+  &_circle {
+    &:after {
+      @include service-icon(61px, 62px, circle);
+      transform: translate(-11px, -5px)
+    }
+  }
+  &_cogwheel {
+    &:after {
+      @include service-icon(84px, 87px, cogwheel);
+      transform: translate(5px, 15px)
+    }
+  }
+  &_magnifier {
+    &:after {
+      @include service-icon(88px, 62px, magnifier);
+      transform: translate(5px, -10px)
+    }
+  }
+}
