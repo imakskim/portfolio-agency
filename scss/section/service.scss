@@ -1,35 +1,36 @@
 .container_service {
   min-height: 927px;
 }
-////positioning grid template////
+////layout with grid template////
 .service__grid-container {
   display: grid;
   grid-template: 
     "caption caption" 330px
     "article image"
-    /35% 65%;
+    /72% 28%;
 }
 
 .service__text {
   grid-area: caption;
-}
-
-.service__article {
-  grid-area: article;
+  text-align: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .service__img {
   grid-area: image;
+  margin-top: 20px;
 }
 
-//styling icons
+////styling icons
 .service__icon-item {
   width: 104px;
   height: 92px;border-radius: 2px;
   box-shadow: 0 0 1px 0 rgba(20, 20, 21, 0.14);
   background-color: #fbfbfb;
   position: relative;
+  margin-bottom: 10px;
   &_circle {
     &:after {
       @include service-icon(61px, 62px, circle);
@@ -49,3 +50,67 @@
     }
   }
 }
+
+////styling article////
+.service__article {
+  grid-area: article;
+  margin-top: 10px;
+  display: flex;
+  
+  &-caption {
+    font-family: 'OpenSans';
+    font-size: 1.875rem;
+    color: $main-text;
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+
+  }
+  
+  &-text {
+    font-family: 'OpenSans';
+    font-size: 1rem;
+    color: $main-text;
+
+
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16%;
+    margin-right: 10%;
+  }
+}
+
+////styling button
+.service__article-btn {
+  margin-top: 40px;
+  width: 238px;
+  height: 55px;
+  outline: none;
+  border-radius: 27px;
+  background-color: $service-btn;
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  //layout child elements inside button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  &:hover {
+    box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);
+  }
+}
+
+.service__article-btn-title {
+  @extend .btn__title;
+}
+
+.service__article-btn-shape {
+  @extend .btn__shape;
+}
+
+
+
+
+

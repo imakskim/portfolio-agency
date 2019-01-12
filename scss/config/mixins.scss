@@ -18,6 +18,34 @@
   color: $main-text;
 }
 
+//styling btn title and btn shape "plus"
+.btn__shape {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: $btn-title;
+  border-radius: 1px;
+  &:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: $btn-title;
+    border-radius: 1px;
+    transform: rotate(90deg);
+  }
+}
+
+.btn__title {
+  margin-left: 20px;
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  text-align: center;
+  color: $btn-title;
+}
+
+
 // tile icon style
 .tile-icon {
   content: "";
@@ -38,7 +66,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
-background: url(images/service/$pic-name +'.png');
-background-repeat: no-repeat;
+  background: url(/images/service/$pic-name +'.png');
+  background-repeat: no-repeat;
 }

@@ -1,10 +1,4 @@
-// colors from section 'hero'
-$color-logo: rgba(0, 0, 0, 1);
-$color-logo-highlight: rgba(252, 103, 68, 1);
-$hero-caption: rgba(98, 98, 98, 0.94);
-$hero-caption-highlight: rgba(252, 103, 68, 0.94);
-
-//background section colors
+// sections background color
 $background: #fbfbfb;
 
 // main text color
@@ -17,14 +11,24 @@ $caption-highlight: rgba(252, 103, 68, 0.8);
 // color of main interface (btns, socials etc.)
 $main-interface: #ff5c36;
 
+//btns colors
+$btn: #ffffff;
+$btn-title: rgba(0, 0, 0, 0.7);
+
+// section 'hero' colors
+$color-logo: rgba(0, 0, 0, 1);
+$color-logo-highlight: rgba(252, 103, 68, 1);
+$hero-caption: rgba(98, 98, 98, 0.94);
+$hero-caption-highlight: rgba(252, 103, 68, 0.94);
 
 // form color
 $form-title: rgba(33, 26, 24, 0.9);
 
-//btns, tiles text color (section 'work')
+// btns, tiles text colors (section 'work')
 $tile-title: rgba(255, 255, 255, 0.9);
 $tile-text: rgba(255, 255, 255, 0.75);
-$work-btn: #ffffff;
-$work-btn-title: rgba(0, 0, 0, 0.7);
 
+
+// section service colors
+$service-btn: #ffffff;
 

@@ -107,7 +107,7 @@
 
 ////styling button/////
 .work-btn {
-  background-color: $work-btn;
+  background-color: $btn;
   width: 228px;
   height: 55px;
   border-radius: 27px;
@@ -129,29 +129,9 @@
 }
 
 .work-btn__title {
-  margin-left: 20px;
-  font-family: 'OpenSans';
-  font-size: 1rem;
-  text-align: center;
-  color: $work-btn-title;
+  @extend .btn__title;
 }
 
 .work-btn__shape {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 2px;
-  background-color: $work-btn-title;
-  border-radius: 1px;
-
-  &:after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 2px;
-    background-color: $work-btn-title;
-    border-radius: 1px;
-    transform: rotate(90deg);
-
-  }
+  @extend .btn__shape;
 }
