@@ -1,0 +1,70 @@
+.clients__slide-desc {
+  font-family: 'SourceSansPro';
+  font-size: 1.06rem;
+  color: $main-text;
+}
+
+.clients__slide-name {
+  font-family: 'SourceSansPro';
+  font-size: 1.06rem;
+  color: $main-text;
+  font-weight: 600;
+
+  &_italic {
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+.clients__slide-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.clients__slide {
+  width: 537px;
+  height: 270px;
+  border: 1px solid rgba(20,20,20,.1);
+  border-radius: 1px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients__slide-rate {
+  width: 84px;
+  height: 14px;
+  background: url(../images/clients/star-sprite.png);
+  position: relative;
+
+  &-cover {
+    display: block;
+    position: absolute;
+    //change width (step 20%)//
+    width: 100%;
+    height: 100%;
+    background: url(../images/clients/star-sprite.png) left bottom;
+    
+  }
+}
+
+.clients__slide-desc {
+  text-align: center;
+  width: 82%;
+  margin-bottom: 20px;
+  margin-top: 65px;
+}
+
+.clients__slide-pic {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.clients__slide-name {
+  margin-top: 20px;
+}
