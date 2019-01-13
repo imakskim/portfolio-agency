@@ -1,0 +1,85 @@
+.team {
+  background-color: $background;
+}
+
+.team__text {
+  text-align: center;
+}
+
+.container_team {
+  min-height: 964px;
+  padding-top: 120px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 125px;
+}
+
+.team__list-item {
+  width: 360px;
+  height: 445px;
+  background-color: burlywood;
+  position: relative;
+
+}
+///syling nameplete////
+.team__nameplate {
+  position: absolute;
+  width: 73%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 25px);
+  border-radius: 2px;
+  box-shadow: 1px 5.9px 16px 0 rgba(20, 20, 21, 0.08);
+  background-color: #ffffff;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-name {
+    font-family: 'OpenSans';
+    font-size: 1.875rem;
+    color: $main-text;
+  }
+
+  &-desc {
+    font-family: 'OpenSans';
+    font-size: 1rem;
+    color: $main-text;
+  }
+
+  &_active {
+    left: 0;
+    background: linear-gradient(to top, rgba(255, 243, 240, 1), rgba(255, 243, 240, .5), rgba(255, 243, 240, 0));
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    transform: translateY(0);
+  }
+}
+
+.team__nameplate-scale {
+  display: none;
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+////styling socials////
+.team__socials-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team__socials-list {
+  display: flex;
+  justify-content: center;
+}
