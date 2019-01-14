@@ -1,7 +1,14 @@
-.clients__slide-desc {
-  font-family: 'SourceSansPro';
-  font-size: 1.06rem;
-  color: $main-text;
+.container__clients {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.clients__slider {
+  margin-top: 70px;
+}
+
+.clients__text {
+  text-align: center;
 }
 
 .clients__slide-name {
@@ -23,19 +30,41 @@
 }
 
 .clients__slide {
-  width: 537px;
-  height: 270px;
-  border: 1px solid rgba(20,20,20,.1);
-  border-radius: 1px;
+  width: 557px;
+  height: 330px;
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  &-container {
+    width: 100%;
+    height: 270px;
+    border: 1px solid rgba(20,20,20,.1);
+    border-radius: 1px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.clients__slide-pic {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clients__slide-desc {
+  font-family: 'SourceSansPro';
+  font-size: 1.06rem;
+  color: $main-text;
+
+  text-align: center;
+  width: 82%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 95px;
 }
 
 .clients__slide-rate {
+  margin: 0 auto;
   width: 84px;
   height: 14px;
   background: url(../images/clients/star-sprite.png);
@@ -52,19 +81,15 @@
   }
 }
 
-.clients__slide-desc {
-  text-align: center;
-  width: 82%;
-  margin-bottom: 20px;
-  margin-top: 65px;
-}
-
-.clients__slide-pic {
-  position: absolute;
-  top: 0;
-  transform: translateY(-50%);
-}
-
 .clients__slide-name {
+  text-align: center;
   margin-top: 20px;
+}
+
+
+.clients__slider-arrow {
+  width: 48px;
+  height: 48px;
+  background-color: $main-interface;
+  border-radius: 50%;
 }

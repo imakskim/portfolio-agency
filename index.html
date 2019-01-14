@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -266,33 +268,63 @@
 
         <!-- section CLIENTS -->
         <section class="clients">
-          <div class="container">
+          <div class="container container__clients">
             <div class="clients__text">
               <div class="clients__caption caption"><span class="caption_highlighted">Clients</span> said</div>
               <div class="clients__main-text main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit Maiores fuga provident Libero.</div>
             </div>
-            <div class="clients__slider">
+
+            <!-- slider slick JS -->
+            <div class="clients__slider js-slider">
               <div class="clients__slide">
-                <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
-                <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                <div class="clients__slide-rate">
-                  <span class="clients__slide-rate-cover"></span>
+                <div class="clients__slide-container">
+                  <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
+                  <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                  <div class="clients__slide-rate">
+                    <span class="clients__slide-rate-cover"></span>
+                  </div>
+                  <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
                 </div>
-                <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
               </div>
               <div class="clients__slide">
-                <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
-                <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
-                <div class="clients__slide-rate">
-                  <span class="clients__slide-rate-cover"></span>
+                <div class="clients__slide-container">
+                  <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
+                  <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                  <div class="clients__slide-rate">
+                    <span class="clients__slide-rate-cover"></span>
+                  </div>
+                  <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
                 </div>
-                <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
+              </div>
+              <div class="clients__slide">
+                <div class="clients__slide-container">
+                  <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
+                  <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                  <div class="clients__slide-rate">
+                    <span class="clients__slide-rate-cover"></span>
+                  </div>
+                  <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
+                </div>
+              </div>
+              <div class="clients__slide">
+                <div class="clients__slide-container">
+                  <img src="images/clients/avatar.png" alt="Photo" class="clients__slide-pic">
+                  <p class="clients__slide-desc">“This was my first time renting from car rental. The service rep help me find the best rental to suit my needs. I will definitely rent with this company again”</p>
+                  <div class="clients__slide-rate">
+                    <span class="clients__slide-rate-cover"></span>
+                  </div>
+                  <p class="clients__slide-name">Kita Say, <span class="clients__slide-name_italic"> HK Director</span></p>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
     </div> 
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
     <script src="" async defer></script>
   </body>
