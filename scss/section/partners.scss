@@ -1,0 +1,33 @@
+.partners {
+  min-height: 200px;
+  background-color: $background;
+}
+
+.container_partners {
+  padding-top: 77px;
+}
+
+.partners__list {
+  display: flex;
+}
+
+.partners__link {
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+
+.partners__item {
+  width: 200px;
+  height: 27px;
+}
+
+.partners__icon {
+  height: 100%;
+  left: 50%;
+  opacity: .5;
+
+  &:hover, :focus {
+    opacity: .8;
+  }
+}
