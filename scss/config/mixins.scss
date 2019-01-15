@@ -69,3 +69,16 @@
   background: url(/images/service/$pic-name +'.png');
   background-repeat: no-repeat;
 }
+
+//mixin for social icons in footer
+@mixin footer-socials-icon($width, $height, $vertical, $horizontal) {
+  content: "";
+  display: block;
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(/images/footer/footer-sprite-socials.png) $vertical $horizontal;
+}

@@ -1,0 +1,88 @@
+.footer {
+  min-height: 288px;
+  background-color: #f7f7f7;
+}
+
+.footer__btn-container {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer__btn {
+  outline: none;
+  width: 238px;
+  height: 55px;
+  border-radius: 27px;
+  background-color: #fff;
+  font-family: 'OpenSans';
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer__socials-list {
+  display: flex;
+}
+
+.footer__socials-item {
+  width: 53px;
+  height: 53px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  position: relative;
+  transition: .5s;
+
+  margin-right: 15px;
+  
+  &:last-child {
+    margin-right: 25px;
+  }
+  
+  &:hover {
+    background-color: $main-interface;
+    opacity: .9;
+    box-shadow: 0 0 23px 0 rgba(20, 20, 21, 0.29);
+  }
+
+  &_fb {
+    &:after {
+      @include footer-socials-icon(11px, 20px, top, left);
+    }
+  }
+
+  &_tw {
+    &:after {
+      @include footer-socials-icon(18px, 18px, bottom, left);
+    }
+  }
+
+  &_drbl {
+    &:after {
+      @include footer-socials-icon(19px, 19px, top, right);
+    }
+  }
+  
+  &_bh {
+    &:after {
+      @include footer-socials-icon(25px, 16px, bottom, right);
+    }
+  }
+}
+
+.footer__socials-icon {
+  width: 40%;
+  height: 40%;
+  stroke: white;
+}
+
+.footer__sign {
+  font-family: 'OpenSans';
+  font-size: 1.085rem;
+  color: rgba(4, 4, 4, 0.4);
+}
