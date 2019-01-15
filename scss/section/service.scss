@@ -33,19 +33,19 @@
   margin-bottom: 10px;
   &_circle {
     &:after {
-      @include service-icon(61px, 62px, circle);
+      @include service-icon(61px, 62px, top, left);
       transform: translate(-11px, -5px)
     }
   }
   &_cogwheel {
     &:after {
-      @include service-icon(84px, 87px, cogwheel);
+      @include service-icon(84px, 87px, bottom, left);
       transform: translate(5px, 15px)
     }
   }
   &_magnifier {
     &:after {
-      @include service-icon(88px, 62px, magnifier);
+      @include service-icon(88px, 62px, top, right);
       transform: translate(5px, -10px)
     }
   }

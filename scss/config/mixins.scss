@@ -58,7 +58,7 @@
 }
 
 //service article icon mixin
-@mixin service-icon($width, $height, $pic-name) {
+@mixin service-icon($width, $height, $vertical, $horizontal) {
   content: "";
   display: block;
   width: $width;
@@ -66,7 +66,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url(../images/service/$pic-name +'.png');
+  background-image: url(../images/service/service-sprite.png);
+  background-position: $vertical $horizontal;
   background-repeat: no-repeat;
 }
 
@@ -80,5 +81,5 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(../images/footer/footer-sprite-socials.png) $vertical $horizontal;
+  background-image: url(../images/footer/footer-sprite-socials.png) $vertical $horizontal;
 }
