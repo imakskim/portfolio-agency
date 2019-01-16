@@ -1,5 +1,9 @@
 .container_service {
   min-height: 927px;
+
+  @include tablet {
+    min-height: 600px;
+  }
 }
 ////layout with grid template////
 .service__grid-container {
@@ -8,6 +12,22 @@
     "caption caption" 330px
     "article image"
     /72% 28%;
+
+    @include tablet {
+      grid-template: 
+      "caption caption" 250px
+      "article image"
+      /72% 28%;
+      margin-bottom: 75px;
+    }
+    @include phone {
+      grid-template: 
+      "caption caption" 180px
+      "article article"
+      /72% 28%;
+      margin-bottom: 50px;
+
+    }
 }
 
 .service__text {
@@ -21,9 +41,13 @@
 .service__img {
   grid-area: image;
   margin-top: 20px;
+
+  @include phone {
+    display: none;
+  }
 }
 
-////styling icons
+////styling article icons
 .service__icon-item {
   width: 104px;
   height: 92px;border-radius: 2px;
@@ -49,6 +73,10 @@
       transform: translate(5px, -10px)
     }
   }
+
+  @include phone {
+    transform: scaleX(.7) scaleY(.7);
+  }
 }
 
 ////styling article////
@@ -63,21 +91,31 @@
     color: $main-text;
     font-size: 1.875rem;
     margin-bottom: 30px;
-
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include phone {
+      font-size: 1.2rem;
+    }
   }
   
   &-text {
     font-family: 'OpenSans';
     font-size: 1rem;
     color: $main-text;
-
-
+    @include phone {
+      font-size: .8rem;
+    }
+    
   }
   &-content {
     display: flex;
     flex-direction: column;
     margin-left: 16%;
     margin-right: 10%;
+    @include phone {
+      margin-left: 5%;
+    }
   }
 }
 

@@ -5,6 +5,9 @@
   @include tablet {
     padding-top: 75px;
   }
+  @include tablet {
+    padding-top: 60px;
+  }
 }
 
 .work__text {
@@ -16,6 +19,9 @@
   @include laptop {
     display: flex;
     justify-content: center;
+  }
+  @include tablet {
+    margin-bottom: 40px;
   }
 }
 .work__tile-list {

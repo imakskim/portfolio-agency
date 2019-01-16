@@ -4,6 +4,13 @@
 
 .container_feature {
   padding-top: 110px;
+
+  @include tablet {
+    padding-top: 75px;
+  }
+  @include phone {
+    padding-top: 50px;
+  }
 }
 
 ////styling text////
@@ -23,12 +30,26 @@
 
   margin-top: 100px;
   margin-bottom: 145px;
+
+  @include tablet {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+  @include phone {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 .feature__tile-item {
   width: 360px;
   height: 360px;
   margin-bottom: 25px;
+
+  @include phone {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 .feature__pic {
