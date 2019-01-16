@@ -1,9 +1,9 @@
 /* config */
 // variables contains color variables
 // media contains requests to adaptive
+@import "config/media.scss";
 @import "config/variables.scss";
 @import "config/mixins.scss";
-@import "config/media.scss";
 
 /* layout */
 @import "layout/base.scss";

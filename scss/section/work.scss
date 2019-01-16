@@ -2,6 +2,9 @@
 .container_work {
   min-height: 775px;
   padding-top: 135px;
+  @include tablet {
+    padding-top: 75px;
+  }
 }
 
 .work__text {
@@ -9,11 +12,25 @@
 }
 
 ////positioning tiles//// 
+.work__tile-container {
+  @include laptop {
+    display: flex;
+    justify-content: center;
+  }
+}
 .work__tile-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 105px;
+  
+  @include laptop {
+    width: 768px;
+    margin-top: 65px;
+  }
+  @include tablet {
+    width: 100%;
+  }
 }
 
 ////styling tiles////
@@ -41,6 +58,10 @@
   }
   &_color-watermelon {
     background-color: #f74770;
+  }
+
+  @include laptop {
+    margin-bottom: 50px;
   }
 }
 

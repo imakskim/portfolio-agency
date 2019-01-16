@@ -26,7 +26,6 @@
 }
 ///syling nameplate////
 .team__nameplate {
-
   text-align: center;
   position: absolute;
   width: 73%;
@@ -94,8 +93,6 @@
   
   &_active {
     opacity: 1;
-    display: flex;
-    justify-content: center;
   }
 }
 

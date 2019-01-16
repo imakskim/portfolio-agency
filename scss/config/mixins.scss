@@ -9,6 +9,10 @@
   &_highlighted {
     color: $caption-highlight;
   }
+  @include tablet {
+    font-size: 2rem;
+
+  }
 }
 
 //main-text style
@@ -16,6 +20,9 @@
   font-family: 'OpenSans';
   font-size: 1rem;
   color: $main-text;
+  @include phone {
+    font-size: .87rem;
+  }
 }
 
 //styling btns
@@ -26,6 +33,11 @@
   border: 1px solid rgba(20, 20, 21, 0.07);
   border-radius: 27px;
   outline: none;
+
+  @include phone {
+    width: 180px;
+    height: 40px;
+  }
 }
 
 //btn title & bnt shape
@@ -36,6 +48,9 @@
   height: 2px;
   background-color: $btn-title;
   border-radius: 1px;
+  @include phone {
+    width: 12px;
+  }
 
   position: absolute;
   top: 50%;
@@ -50,6 +65,9 @@
     background-color: $btn-title;
     border-radius: 1px;
     transform: rotate(90deg);
+    @include phone {
+    width: 12px;
+    }
   }
 }
 
