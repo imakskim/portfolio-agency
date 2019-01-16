@@ -83,19 +83,10 @@
 
 ////styling button
 .service__article-btn {
+  @extend .btn;
+  
+  position: relative;
   margin-top: 40px;
-  width: 238px;
-  height: 55px;
-  outline: none;
-  border-radius: 27px;
-  background-color: $service-btn;
-  font-family: 'OpenSans';
-  font-size: 1rem;
-  //layout child elements inside button
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
 
   &:hover {
     box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);

@@ -18,7 +18,17 @@
   color: $main-text;
 }
 
-//styling btn title and btn shape "plus"
+//styling btns
+.btn {
+  background-color: $btn;
+  width: 228px;
+  height: 55px;
+  border: 1px solid rgba(20, 20, 21, 0.07);
+  border-radius: 27px;
+  outline: none;
+}
+
+//btn title & bnt shape
 .btn__shape {
   content: "";
   display: block;
@@ -26,6 +36,12 @@
   height: 2px;
   background-color: $btn-title;
   border-radius: 1px;
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+
   &:after {
     content: "";
     display: block;
@@ -46,7 +62,7 @@
 }
 
 
-// tile icon style
+//tile icon style on section Work
 .tile-icon {
   content: "";
   display: block;
@@ -86,6 +102,8 @@
 }
 
 //scales of 'team' section
+
+
 @mixin scale-percent($width) {
   content: "";
   width: $width;
