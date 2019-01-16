@@ -40,15 +40,14 @@
   background-color: #ffffff;
   border-radius: 2px;
   box-shadow: 1px 5.9px 16px 0 rgba(20, 20, 21, 0.08);
-  transition: .5s;
+  transition: width .5s, height .8s, transform .5s;
 
   &_active {
-    left: 0;
-    background: linear-gradient(to top, rgba(255, 243, 240, 1), rgba(255, 243, 240, .5), rgba(255, 243, 240, 0));
+    left: 50%;
     height: 100%;
     width: 100%;
-    justify-content: flex-end;
-    transform: translateY(0);
+    background: linear-gradient(to top, rgba(255, 243, 240, 1), rgba(255, 243, 240, .5), rgba(255, 243, 240, 0));
+    transform: translate(-50%, 0px);
     .team__nameplate-desc {
     transform: translate(-50%, -30px);
     }
