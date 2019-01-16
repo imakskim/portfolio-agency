@@ -6,15 +6,29 @@
 .container_hero {
   min-height: 930px;
   position: relative;
+
+  @include phone {
+    min-height: 640px;
+  }
 }
 
 .hero__caption {
-  font-family: OpenSans;
-  font-size: 50px;
+  font-family: 'OpenSans';
+  font-size: 3.125rem;
   font-weight: 600;
   color: $hero-caption;
   text-align: center;
   opacity: .94;
+
+  @include laptop {
+    font-size: 2.5rem;
+  }
+  @include tablet {
+    font-size: 2rem;
+  }
+  @include phone {
+    font-size: 1.2rem;
+  }
 }
 
 .hero__caption-highlight {
@@ -26,6 +40,10 @@
   font-size: 1rem;
   text-align: center;
   font-weight: 300;
+
+  @include phone {
+    font-size: .8rem;
+  }
 }
 
 .hero__content {
@@ -33,5 +51,12 @@
   position: absolute;
   top: 28.5%;
   left: 50%;
-  transform: translate(-50%, 0)
+  transform: translate(-50%, 0);
+
+  @include laptop {
+    width: 80%;
+  }
+  @include phone {
+    top: 20%;
+  }
 }

@@ -3,6 +3,13 @@
   height: 135px;
   position: absolute;
   z-index: 1;
+
+  @include laptop {
+    height: 85px;
+  }
+  @include tablet {
+    height: 55px;
+  }
 }
 
 .container_header {
@@ -25,6 +32,12 @@
   font-size: 2.38rem;
   font-weight: 600;
   color: $color-logo;
+
+  @include tablet {
+    font-size: 1.38rem;
+    height: 33px;
+    width: 90px;
+  }
 }
 
 .logo-title_highlight {
@@ -40,6 +53,10 @@
   width: 50%;
   display: flex;
   align-items: flex-end;
+  
+  @include laptop {
+    width: 20%;
+  }
 }
 
 .header__menu-container {
@@ -48,6 +65,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -69,6 +90,11 @@
   border-radius: 1.5px;
   background-color: #706c72;
   transition: .5s;
+
+  @include tablet {
+    width: 25px;
+    margin-left: -13px;
+  }
   
   ///active class burger menu button (color transition)
   &_mouseover {
@@ -90,7 +116,7 @@
     }
   }
 
-  ///animate burger menu button on click
+  ///animate burger menu button
   &:before { 
     transform: translateY(-8px);
   }
@@ -116,9 +142,9 @@
   display: block;
 }
 
-
-
+////styling menu items///
 .menu__item {
+  font-size: 1rem;
   font-family: 'OpenSans';
   text-decoration: none;
   color: #706c72;
@@ -127,6 +153,14 @@
   display: inline-block;
   margin-right: 20px;
   transition: .5s;
+  
+  @include tablet {
+    font-size: .85rem;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   &:hover {
     color: $main-interface;
