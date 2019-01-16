@@ -1,6 +1,10 @@
 .footer {
   min-height: 288px;
   background-color: #f7f7f7;
+
+  @include phone {
+    min-height: 240px;
+  }
 }
 
 .footer__btn-container {
@@ -8,6 +12,7 @@
   text-align: center;
 }
 
+//button
 .footer__btn {
   outline: none;
   width: 238px;
@@ -18,13 +23,24 @@
   font-family: 'OpenSans';
   font-size: 1rem;
   text-transform: capitalize;
+
+  @include phone {
+    width: 150px;
+    height: 40px;
+    font-size: .8rem;
+  }
 }
 
+//social & sign
 .footer__content {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__socials-list {
@@ -40,17 +56,16 @@
   transition: .5s;
 
   margin-right: 15px;
-  
   &:last-child {
     margin-right: 25px;
   }
-  
   &:hover {
     background-color: $main-interface;
     opacity: .9;
     box-shadow: 0 0 23px 0 rgba(20, 20, 21, 0.29);
   }
 
+  //icons
   &_fb {
     &:after {
       @include footer-socials-icon(11px, 20px, top, left);
@@ -74,6 +89,12 @@
       @include footer-socials-icon(25px, 16px, bottom, right);
     }
   }
+
+  //adaptive
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .footer__socials-icon {
@@ -86,4 +107,8 @@
   font-family: 'OpenSans';
   font-size: 1.085rem;
   color: rgba(4, 4, 4, 0.4);
+
+  @include tablet {
+    margin-top: 10px;
+  }
 }

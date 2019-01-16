@@ -35,7 +35,7 @@ main {
 }
 
 section {
-  min-height: 650px;
+  min-height: 400px;
   overflow: hidden;
 }
 .container {
@@ -61,4 +61,10 @@ body {
   font-weight: 300;
   line-height: 1.42;
   color: #221f1f;
+}
+
+.clearfix:after{ 
+  content: "";
+  display: block;
+  clear: both;
 }

@@ -5,10 +5,20 @@
 
 .container_partners {
   padding-top: 77px;
+  
+  @include tablet {
+    padding-top: 47px;
+  }
 }
 
 .partners__list {
   display: flex;
+  justify-content: center;
+  padding: 5px;
+
+  @include laptop {
+    flex-wrap: wrap;
+  }
 }
 
 .partners__link {
@@ -18,14 +28,22 @@
 }
 
 .partners__item {
+  margin: 5px;
   width: 200px;
   height: 27px;
+
+  @include laptop {
+    width: 150px;
+  }
 }
 
 .partners__icon {
   height: 100%;
-  left: 50%;
   opacity: .5;
+
+  @include laptop {
+    height: 80%;
+  }
 
   &:hover, :focus {
     opacity: .8;

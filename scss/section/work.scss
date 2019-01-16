@@ -92,40 +92,36 @@
   //add icons to tiles
   &_magnet {
     &:after {
-      background: url(../images/magnet.png) no-repeat;
-      background-size: cover;
-      width: 43px;
-      height: 44px;
+      background: url(../images/work/work-sprite.png) top left;
+      width: 60px;
+      height: 61px;
       @extend .tile-icon;
     }
   }
 
   &_bug {
     &:after {
-      background: url(../images/bug.png) no-repeat;
-      background-size: cover;
-      width: 54px;
-      height: 50px;
+      background: url(../images/work/work-sprite.png) top right;
+      width: 60px;
+      height: 59px;
       @extend .tile-icon;
     }
   }
 
   &_cogwheel {
     &:after {
-      background: url(../images/cogwheel.png) no-repeat;
-      background-size: cover;
-      width: 54px;
-      height: 50px;
+      background: url(../images/work/work-sprite.png) bottom right;
+      width: 60px;
+      height: 56px;
       @extend .tile-icon;
     }
   }
 
   &_photo {
     &:after {
-      background: url(../images/photo.png) no-repeat;
-      background-size: cover;
-      width: 56px;
-      height: 52px;
+      background: url(../images/work/work-sprite.png) bottom left;
+      width: 60px;
+      height: 56px;
       @extend .tile-icon;
     }
   }
