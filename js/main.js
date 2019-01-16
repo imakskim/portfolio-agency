@@ -34,3 +34,15 @@ $('.js-menu-btn').on('mouseout', function(e) {
   $('.js-menu-btn-shape').removeClass('menu-btn__shape_mouseover');
   $('.js-menu-btn-shape').addClass('menu-btn__shape_mouseout');
 });
+
+
+////animate "team nameplate"////
+$('.js-nameplate').on('click', function(e) {
+  e.preventDefault();
+  $(this).toggleClass('team__nameplate_active');
+  //add active class to property ".team__socials-list"
+  $(this).find('.js-nameplate-socials-A').toggleClass('team__socials-list_active');
+  $(this).find('.js-nameplate-socials-B').toggleClass('team__socials-list_active');
+  $(this).find('.js-nameplate-socials-C').toggleClass('team__socials-list_active');
+  $(this).find('.js-team-scales-B').toggleClass('team__scales_active');
+});

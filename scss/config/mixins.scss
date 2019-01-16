@@ -71,7 +71,7 @@
   background-repeat: no-repeat;
 }
 
-//mixin for social icons in footer
+//social icons in footer
 @mixin footer-socials-icon($width, $height, $vertical, $horizontal) {
   content: "";
   display: block;
@@ -83,4 +83,14 @@
   transform: translate(-50%, -50%);
   background-image: url(../images/footer/footer-sprite-socials.png);
   background-position: $vertical $horizontal;
+}
+
+//scales of 'team' section
+@mixin scale-percent($width) {
+  content: "";
+  width: $width;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #ff6e47;
 }
