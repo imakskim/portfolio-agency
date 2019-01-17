@@ -25,6 +25,7 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -33,9 +34,8 @@ $(document).ready(function(){
   });
 });
 
-////launch svg////
+////launch crossbrowser svg////
 svg4everybody();
-
 
 if(window.matchMedia('(min-width: 481px)').matches) {
   ////animate header menu////
