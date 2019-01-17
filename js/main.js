@@ -1,4 +1,10 @@
 
+////smooth Scroll////
+$("body").mCustomScrollbar({
+  theme: "minimal-dark",
+  mouseWheel:{ normalizeDelta: true, deltaFactor: '35'},
+});
+  
 ////launch slick.js////
 $(document).ready(function(){
   $('.js-slider').slick({
