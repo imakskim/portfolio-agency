@@ -36,11 +36,16 @@
   }
 }
 
+.team__list-item-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: grayscale(45%);
+}
 
 .team__list-item {
   width: 355px;
   height: 445px;
-  background-color: burlywood;
   position: relative;
 
   @include laptop {
@@ -75,16 +80,13 @@
 ///syling nameplate////
 .team__nameplate {
   text-align: center;
-  // position: absolute;
-  // left: 50%;
-  // transform: translate(-50%, 25px);
   transform: translateY(25px);
   width: 73%;
   height: 20%;
   bottom: 0;
   cursor: pointer;
 
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, .8);
   border-radius: 2px;
   box-shadow: 1px 5.9px 16px 0 rgba(20, 20, 21, 0.08);
   transition: transform .5s, width .5s, height .8s;
